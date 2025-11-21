@@ -4,6 +4,8 @@ Changelog for package force_torque_sensor_broadcaster
 
 4.34.0 (2025-11-10)
 -------------------
+* Add wrench transformer node for transforming wrench messages to different frames (`#1842 <https://github.com/ros-controls/ros2_controllers/issues/1842>`_)
+* Contributors: Julia Jia
 
 4.33.1 (2025-10-17)
 -------------------
