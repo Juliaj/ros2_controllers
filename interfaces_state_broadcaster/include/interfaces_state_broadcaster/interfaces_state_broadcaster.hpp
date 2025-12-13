@@ -20,6 +20,7 @@
 #include <unordered_map>
 #include <vector>
 
+#include "controller_interface/controller_interface.hpp"
 #include "control_msgs/msg/dynamic_joint_state.hpp"
 #include "control_msgs/msg/float64_values.hpp"
 #include "control_msgs/msg/keys.hpp"
@@ -74,7 +75,8 @@ protected:
   std::shared_ptr<rclcpp::Publisher<control_msgs::msg::Keys>> names_publisher_;
   std::shared_ptr<rclcpp::Publisher<control_msgs::msg::Float64Values>> values_publisher_;
   std::shared_ptr<realtime_tools::RealtimePublisher<control_msgs::msg::Float64Values>>
-    control_msgs::msg::Keys names_msg_;
+    realtime_values_publisher_;
+  control_msgs::msg::Keys names_msg_;
   control_msgs::msg::Float64Values values_msg_;
 };
 
